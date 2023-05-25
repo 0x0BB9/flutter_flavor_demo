@@ -14,3 +14,13 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+#### Debug
+
+Dev: `flutter run --flavor forDev --dart-define=host=dev`
+
+Test: `flutter run --flavor forTest --dart-define=host=test`
+
+Gray: `flutter run --flavor forGray --dart-define=host=gray`
+
+Product： ``flutter run --flavor forRelease --dart-define=host=prod``

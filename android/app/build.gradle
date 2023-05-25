@@ -68,21 +68,29 @@ android {
     productFlavors {
 
         forDev {
-            manifestPlaceholders = [app_icon: "@drawable/ic_launcher"]
+            manifestPlaceholders = [app_icon: "@mipmap/ic_launcher"]
             resValue "string", "app_name", "Will Dev"
             applicationIdSuffix ".dev"
             buildConfigField "int", "API_HOST", "${API_DEV}"
             dimension "env"
         }
         forTest{
+            manifestPlaceholders = [app_icon: "@mipmap/ic_launcher"]
+            resValue "string", "app_name", "Will Test"
+            applicationIdSuffix ".test"
             buildConfigField "int", "API_HOST", "${API_TEST}"
             dimension "env"
         }
         forGray {
+            manifestPlaceholders = [app_icon: "@mipmap/ic_launcher"]
+            resValue "string", "app_name", "Will Gray"
+            applicationIdSuffix ".gray"
             buildConfigField "int", "API_HOST", "${API_GRAY}"
             dimension "env"
         }
         forProduct {
+            manifestPlaceholders = [app_icon: "@mipmap/ic_launcher"]
+            resValue "string", "app_name", "Will Pro"
             buildConfigField "int", "API_HOST", "${API_PRODUCT}"
             dimension "env"
         }
